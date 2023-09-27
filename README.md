@@ -39,9 +39,22 @@ Inserisco poi un for che servirà  per poter scorrere il vettore ,al quale dentr
 
 
 ```
-Nel primo if vi inserisco la condizone per la quale se all'inizio del numero vi è il +39(e quindi le prime tre celle del vettore ) mi restituisca il numero di cellulare:
+Nel primo if vi inserisco la condizone per la quale se all'inizio del numero vi è il +39(e quindi le prime tre celle del vettore ) mi restituisca il valore num :
 ```
 if(num[0]=='+' && num[1]=='3' && num[2]=='9'){
                 return num;
+   };
 ```
-La stessa cosa vale per gli altri due if che però dovranno rispettare condizioni diverse.
+Nel secondo if invece accade la stessa cosa del primo ma con una differente condizione ovvero chde  se  al inizio del numero vi è 003 allora mi ritorna il valore num:
+```
+if(num[0]=='0' && num[1]=='0' && num[2]=='3' && num[1]=='9'){
+                return num;
+            };
+```
+Nel terzo caso come negli altri due ,con condizione che se al inizio del numero vi sia 3 ho in ritorno il valore num:
+```
+if(num[0]=='3' ){
+                return num;
+            };
+```
+
